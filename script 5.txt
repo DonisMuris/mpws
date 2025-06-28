@@ -5,42 +5,42 @@ if $start.0 > 0
     stop_script
 end_if
 
-set $autocultivo F12
+set $autocultivo {vk123}
 
 :char1
     if $char1.0 > 0
         set workwindow $char1.0
-        send F12
+        send $autocultivo
     end_if
 
 :char2
     if $char2.0 > 0
         set workwindow $char2.0
-        send F12
+        send $autocultivo
     end_if
 
 :char3
     if $char3.0 > 0
         set workwindow $char3.0
-        send F12
+        send $autocultivo
     end_if
 
 :char4
     if $char4.0 > 0
         set workwindow $char4.0
-        send F12
+        send $autocultivo
     end_if
 
 :char5
     if $char5.0 > 0
         set workwindow $char5.0
-        send F12
+        send $autocultivo
     end_if
 
 :char6
     if $char6.0 > 0
         set workwindow $char6.0
-        send F12
+        send $autocultivo
     end_if
 
 showwindow $lider.0

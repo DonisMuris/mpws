@@ -15,15 +15,16 @@ if $start1 = 1
     save_array %handle "C:\Users\Merry\Desktop\uopilot\logs.txt"
 
     set $clickstart F10
-    set $clickstart2 F11
+    set $seguir_lider F11
     set $buff1 9
     set $zen F8
     set $autocultivo F12
-    set $ataque1 1
-    set $ataque_area 3
+    set $ataque1 3
+    set $ataque_area 4
     set $voo F3
     set $coleta_item F5
     set $teleporte1 F7
+    set $ataque_aux 2
 
     start_script 1 wait
     start_script 2 wait
@@ -35,21 +36,23 @@ if $start1 = 1
     start_script 8 wait
     start_script 9 wait
     start_script 10 wait
+    start_script 11 wait
 
     stop_script
 end_if
 
     set $start 0
     set $clickstart F10
-    set $clickstart2 F11
+    set $seguir_lider F11
     set $buff1 9
     set $zen F8
     set $autocultivo F12
-    set $ataque1 1
-    set $ataque_area 3
+    set $ataque1 3
+    set $ataque_area 4
     set $voo F3
     set $coleta_item F5
     set $teleporte1 F7
+    set $ataque_aux 2
 
 //--VARIAVEIS--//
 :class

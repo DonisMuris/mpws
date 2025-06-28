@@ -5,14 +5,13 @@ if $start.0 > 0
     stop_script
 end_if
 
-set $ataque1 1
+set $ataque1 3
 
 :char1
     if $char1.0 > 0
         set workwindow $char1.0
         send $ataque1
     end_if
-
 :char2
     if $char2.0 > 0
         set workwindow $char2.0

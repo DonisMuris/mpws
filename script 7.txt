@@ -5,7 +5,7 @@ if $start.0 > 0
     stop_script
 end_if
 
-set $ataque_area 3
+set $ataque_area 4
 
 :char1
     if $char1.0 > 0

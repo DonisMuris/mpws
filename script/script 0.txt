@@ -1,0 +1,84 @@
+//---Inicio---//
+:start
+if $startzero < 0
+    set linedelay 0
+    set $start1 prompt (Valores:\n1 - Definir Teclas\n0 - Iniciar Script)
+    set $startzero 1
+    set $start 1
+    goto main
+end_if
+
+:main
+if $start1 = 1
+    set %handle findwindow ("Meta Perfect World")
+    set %arr [1] #i
+    save_array %handle "C:\Users\Merry\Desktop\uopilot\logs.txt"
+
+    set $clickstart F10
+    set $seguir_lider F11
+    set $buff1 9
+    set $zen F8
+    set $autocultivo F12
+    set $ataque1 3
+    set $ataque_area 4
+    set $voo F3
+    set $coleta_item F5
+    set $teleporte1 F7
+    set $ataque_aux 2
+
+    start_script 1 wait
+    start_script 2 wait
+    start_script 3 wait
+    start_script 4 wait
+    start_script 5 wait
+    start_script 6 wait
+    start_script 7 wait
+    start_script 8 wait
+    start_script 9 wait
+    start_script 10 wait
+    start_script 11 wait
+
+    stop_script
+end_if
+
+    set $start 0
+    set $clickstart F10
+    set $seguir_lider F11
+    set $buff1 9
+    set $zen F8
+    set $autocultivo F12
+    set $ataque1 3
+    set $ataque_area 4
+    set $voo F3
+    set $coleta_item F5
+    set $teleporte1 F7
+    set $ataque_aux 2
+
+//--VARIAVEIS--//
+:class
+    load_array %arr "C:\Users\Merry\Desktop\uopilot\logs.txt"
+
+//--Conta 1--//
+    set $char1 %arr [1 1]
+
+//--Conta 2--//
+    set $char2 %arr [2 1]
+
+//--Conta 3--//
+    set $char3 %arr [3 1]
+
+//--Conta 4--//
+    set $char4 %arr [4 1]
+
+//--Conta 5--//
+    set $char5 %arr [5 1]
+
+//--Conta 6--//
+    set $char6 %arr [6 1]
+
+//--Lider--//
+    set $lider $char1
+
+:loop
+
+goto loop
